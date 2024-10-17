@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Mujahideen Services - Registration</title>
+    <style>
+        body {
+            background-image: url('almujahid.jpg');
+          
+  background-size: cover;
+        
+    background-position: center;
+        
+    background-repeat: no-repeat;
+          
+  font-family: Arial, sans-serif;
+     
+       text-align: left;
+          
+  padding: 20px;
+        }
+
+
+.logo {
+          
+  position: absolute;
+   
+         top: 35px; 
+           place-items: center;   
+       width: 60px; 
+    
+}
+
+ 
+        form {
+            background-color:s;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            text-align: left;
+        }
+        input, select {
+            padding: 8px;
+            margin: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h2  align="center"><img src="almujahidi.png" alt="Logo" class="logo"  ></p><br><h2>
+
+    <h1 align="center">AL-MUJAHIDEEN SERVICES</h1>
+
+
+    <marquee behavior="scroll" direction="left"><h2>Fill the form below to register with us at Al-Mujahideen Services</h2></marquee>
+
+    <form action="dorofi.html" method="POST">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Enter your First Name" required>
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" placeholder="Enter your Surname" required>
+
+            <label for="othersname">Other Names:</label>
+            <input type="text" id="othersname" name="othersname" placeholder="Enter your Other Names">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email Address" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Account Information</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your Username" required>
+
+            <label for="password">Create Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your Password" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Information</legend>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required> Male
+            <input type="radio" id="female" name="gender" value="female"> Female
+            <input type="radio" id="custom" name="gender" value="custom"> Custom
+            <input type="radio" id="not_say" name="gender" value="not_say"> Rather not say
+            <br><br>
+
+            <label for="marital_status">Marital Status:</label>
+            <select id="marital_status" name="marital_status">
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="divorced">Divorced</option>
+            </select>
+        </fieldset>
+  
+        <br>
+        <input type="submit" value="Register" class="submit-btn">
+    </form>
+
+</body>
+</html>

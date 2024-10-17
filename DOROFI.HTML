@@ -1,0 +1,126 @@
+<!Doctype html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Login Page</title>
+<!-- Add Font Awesome for the eye icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+    body {
+        background-image: url('almujahid.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 35px;
+        place-items: center;
+        width: 85px;
+    }
+
+    form {
+        background-color: s;
+        padding: 20px;
+        border-radius: 10px;
+        display: inline-block;
+        text-align: left;
+    }
+
+    input, select {
+        padding: 8px;
+        margin: 10px 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    fieldset {
+        border: 1px solid #ccc;
+        padding: 15px;
+    }
+
+    legend {
+        font-weight: bold;
+    }
+
+    .submit-btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .submit-btn:hover {
+        background-color: #45a049;
+    }
+
+    .error {
+        color: red;
+    }
+
+    .password-container {
+        position: relative;
+    }
+
+    .password-container i {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<h2 align="center">
+    <img src="almujahidi.png" alt="Logo" class="logo">
+</h2><br><br><br>
+<h1 align="center">AL-MUJAHIDEEN SERVICES</h1>
+
+<marquee behavior="scroll" direction="left">
+    <h2>Fill the form below to login with us at Al-Mujahideen Services</h2>
+</marquee>
+
+<form action="firstpage.html" method="POST">
+    <fieldset>
+        <legend>Login details</legend>
+
+        <label for="surname">Surname/Email:</label>
+        <input type="text" id="surname" name="surname" placeholder="Enter your Surname/Email" required><br><br>
+
+        <label for="Enter_password">Enter Password:</label>  
+        <div class="password-container">
+            <input type="password" id="Enter_password" name="Enter_password" placeholder="Enter your Password" required>
+            <i class="far fa-eye" id="togglePassword"></i>
+        </div>
+
+
+        <a href="Reset.html">Reset password</a>
+    </fieldset>
+    <input type="submit" value="login" class="submit-btn">
+    Don't have an account? <a href="almujahid.html">Create New Account</a>
+</form>
+
+<script>
+    const togglePassword = document.querySelector('#togglePassword');
+    const passwordField = document.querySelector('#Enter_password');
+
+    togglePassword.addEventListener('click', function () {
+        // Toggle the type attribute
+        const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordField.setAttribute('type', type);
+
+        // Toggle the eye icon
+        this.classList.toggle('fa-eye-slash');
+    });
+</script>
+
+</body>
+</html>
